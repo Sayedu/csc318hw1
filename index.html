@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div>
+    <h1 class="title">About Me</h1>
+      <div class="pragraphFrame">
+        <p>
+    
+    
+          I am a dedicated and passionate student currently pursuing a degree in Computer Science at a renowned university. With a keen interest in artificial intelligence and software development, I excel in both theoretical knowledge and practical application. I actively participate in coding competitions and have secured top positions in several hackathons, showcasing my problem-solving skills and innovative thinking. Additionally, I am a member of the university's tech club, where I collaborate with peers on various projects, enhancing my teamwork and leadership abilities. In addition to my academic pursuits, I volunteer as a tutor, helping fellow students grasp complex programming concepts. My commitment to continuous learning and enthusiasm for technology drive me to constantly explore new trends and advancements in the field, aiming to contribute meaningfully to the tech community.
+    
+        </p>
+  
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footerContent">
+      <p>
+        Font size of paragraphs decreases and the fornt size of the navbar text decreases on smaller screens (max-width: 767px)
+      </p>
+      
+    </div>
+
+    
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    });
+  </script>
+
+
+</body>
+
+  
+
+</html>

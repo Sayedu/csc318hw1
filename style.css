@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; 
+  background-color: #e5e3e1;
+}
+
+
+
+
+.navbar{
+  background-color: #56839f;
+  overflow: hidden;
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+}
+
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding-right: 3rem;
+  display: flex;
+
+
+}
+
+
+
+.navbar li a{
+  display: block;
+  color: white;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.navbar li a:hover{
+  background-color: #233f58;
+  transition: 0.7s;
+  border-radius: 20px;
+}
+
+.nameBox{
+  margin: 0;
+  padding-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+.title{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: #837863;
+  font-size: 100px;
+}
+
+.pragraphFrame{
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #924545;
+  display: flex;
+  justify-content: center;
+  border-radius: 3rem;
+  
+}
+
+p {
+  font-size: 25px; 
+  line-height: 1.6; 
+  margin-bottom: 20px; 
+}
+
+.footer{
+  background-color: #202569;
+  overflow: hidden;
+
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  bottom: 0;
+  margin-top: 8rem;
+  padding: 11px 0;
+}
+
+.footerContent{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 16px; 
+    margin-bottom: 15px; 
+  }
+  .title{
+    font-size: 50px;
+  }
+
+  .navbar li a{
+    font-size: 15px;
+  }
+}
+
+
+

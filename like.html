@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div>
+    <h1 class="title">What I Like</h1>
+      <div class="pragraphFrame">
+        <p>
+
+
+          I have a wide array of interests that bring joy and fulfillment to my life. Among them, I have a deep appreciation for music in all its forms; from classical compositions that soothe the soul to upbeat rhythms that get me moving, music has a special place in my heart. I also find immense satisfaction in exploring new technologies and gadgets, always eager to learn about the latest innovations and how they can improve our lives. Another passion of mine is traveling and experiencing different cultures firsthand, whether it's sampling exotic cuisines or immersing myself in local traditions and customs. When I'm not exploring the world or tinkering with tech, I love spending quiet evenings with a good book, diving into captivating stories that transport me to distant lands and time periods. These interests not only enrich my life but also fuel my curiosity and drive to continuously learn and grow.
+
+        </p>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footerContent">
+      <p>
+        Font size of paragraphs decreases and the fornt size of the navbar text decreases on smaller screens (max-width: 767px)
+      </p>
+
+    </div>
+
+
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    });
+  </script>
+
+
+</body>
+</html>

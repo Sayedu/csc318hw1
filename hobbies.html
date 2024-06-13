@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div>
+    <h1 class="title">Hobbbies</h1>
+      <div class="pragraphFrame">
+        <p>
+
+
+          I have a diverse range of hobbies that keep me engaged and inspired outside of my computer science studies. One of my favorite pastimes is hiking through rugged mountain trails, where I find solace in the midst of nature's beauty. Capturing these serene moments through photography is another passion of mine; I love experimenting with different angles and lighting to create compelling compositions. When I'm not exploring the outdoors, I enjoy diving into the realms of literature, particularly delving into classic novels that transport me to different eras and cultures. Additionally, I find immense joy in experimenting with culinary creations in my kitchen, where I whip up dishes inspired by various cuisines from around the world. These hobbies not only provide me with relaxation and enjoyment but also enrich my creativity and perspective in all aspects of my life.
+
+        </p>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footerContent">
+      <p>
+        Font size of paragraphs decreases and the fornt size of the navbar text decreases on smaller screens (max-width: 767px)
+      </p>
+
+    </div>
+
+
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    });
+  </script>
+
+  
+</body>
+</html>
